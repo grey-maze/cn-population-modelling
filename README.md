@@ -1,9 +1,9 @@
-# China Population Modelling Project  
+## China Population Modelling Project  
 *A Mathematical Exploration of Logistic Growth, Stability, and Numerical Simulation*
 
 ---
 
-## Overview
+### Overview
 
 China’s demographic contraction continued for a fourth straight year, according to January 2026 data from the National Bureau of Statistics. The total population fell by 3.39 million to 1.40489 billion, driven largely by a significant drop in annual births—from 9.54 million in 2024 to just 7.92 million in 2025.
 
@@ -18,7 +18,7 @@ This study explores these questions through a structured mathematical modelling 
 
 ---
 
-# Project Objectives
+### Objectives
 
 1. Fit a logistic growth model to historical population data (1950–2023).
 2. Estimate model parameters using nonlinear regression.
@@ -29,7 +29,7 @@ This study explores these questions through a structured mathematical modelling 
 
 ---
 
-# Data
+### Data
 
 - Clean CSV file containing annual population data (1950–2023)
 - Population measured in billions
@@ -37,7 +37,7 @@ This study explores these questions through a structured mathematical modelling 
 
 ---
 
-# Mathematical Model
+### Mathematical Model
 
 We model population using the logistic differential equation:
 
@@ -56,7 +56,7 @@ $$P(t) = \frac{K}{1 + Ae^{-rt}}\$$
 
 ---
 
-# Estimated Parameters
+### Estimated Parameters
 
 Using nonlinear least squares regression:
 
@@ -68,7 +68,7 @@ These parameters describe the long-term equilibrium level and growth dynamics im
 
 ---
 
-# Project Structure
+### Project Structure
 china-population-model/
 
 │
@@ -95,9 +95,9 @@ china-population-model/
 
 ---
 
-# Notebook Descriptions
+### Notebook Descriptions
 
-## Notebook 01 – Model Fitting
+#### Notebook 01 – Model Fitting
 
 - Exploratory data analysis  
 - Logistic model formulation  
@@ -106,7 +106,7 @@ china-population-model/
 - Goodness-of-fit discussion  
 ---
 
-## Notebook 02 – Equilibrium & Stability Analysis
+#### Notebook 02 – Equilibrium & Stability Analysis
 
 - Identification of equilibrium points:
   - \( P = 0 \)
@@ -118,7 +118,7 @@ china-population-model/
 
 ---
 
-## Notebook 03 – Numerical Simulation
+#### Notebook 03 – Numerical Simulation
 
 - Euler method discretisation  
 - Comparison with exact solution  
@@ -128,7 +128,7 @@ china-population-model/
 
 ---
 
-# Key Insights
+### Key Insights
 
 - The logistic model fits mid-century growth reasonably well but struggles with recent structural decline.
 - The carrying capacity parameter suggests a theoretical upper bound not currently reached.
@@ -138,7 +138,7 @@ china-population-model/
 
 ---
 
-# Limitations
+### Limitations
 
 - The logistic model assumes symmetric growth dynamics.
 - It does not incorporate:
@@ -150,7 +150,7 @@ china-population-model/
 
 ---
 
-# Possible Extensions
+### Possible Extensions
 
 - Time-dependent growth rate \( r(t) \)  
 - Piecewise logistic models  
