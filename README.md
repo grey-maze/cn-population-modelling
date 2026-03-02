@@ -31,9 +31,9 @@ This study explores these questions through a structured mathematical modelling 
 
 ### Data
 
-- Clean CSV file containing annual population data (1950–2023)
-- Population measured in billions
-- Data sourced from United Nations Data
+- CSV file containing annual population data (1950–2023).
+- Population measured in billions.
+- Data sourced from United Nations Data.
 
 ---
 
@@ -45,7 +45,7 @@ $$\frac{dP}{dt} = rP\left(1 - \frac{P}{K}\right)$$
 
 Where:
 
-- $P\left(t\right)$ = population (billions)
+- $P$ = population
 - $r$ = intrinsic growth rate  
 - $K$ = carrying capacity  
 - $A$ = integration constant  
@@ -69,7 +69,7 @@ These parameters describe the long-term equilibrium level and growth dynamics im
 ---
 
 ### Project Structure
-china-population-model/
+cn-population-modelling/
 
 │
 
@@ -83,7 +83,7 @@ china-population-model/
 
 │   ├── 01_model_fitting.ipynb
 
-│   ├── 02_stability_analysis.ipynb
+│   ├── 02_equilibrium_and_stability_analysis.ipynb
 
 │   └── 03_numerical_simulation.ipynb
 
@@ -113,7 +113,6 @@ china-population-model/
   - \( P = K \)
 - Linearisation around equilibria  
 - Stability classification  
-- Phase-line analysis  
 - Interpretation in demographic context  
 
 ---
